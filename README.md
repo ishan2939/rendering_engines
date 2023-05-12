@@ -64,6 +64,4 @@ and then you can switch between different <code>app.set()</code> statements to s
     </ul>
 </ol>
 
-<hr/>
-
 ##  ✍️ Author: ISHAN HARKHANI
