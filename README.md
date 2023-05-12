@@ -34,7 +34,7 @@ Then open the terminal and run the below command:<br/>
 
 <br/>
 
-and then go to "localhost:3000" to see the output.
+and then go to "localhost:3000/home" to see the output.
 
 <br/>
 
@@ -64,4 +64,6 @@ and then you can switch between different <code>app.set()</code> statements to s
     </ul>
 </ol>
 
-***
+<hr/>
+
+##  ✍️ Author: ISHAN HARKHANI
