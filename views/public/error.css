@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    background-image: url('/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 80%;
+    display: flex;
+    align-items: center;
+}
+
+/*-----------container to show error---------*/
+
+.container{
+    width: 800px;
+    margin: 0px auto;
+    padding: 30px 100px 60px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----------404 gif---------*/
+
+.container .gif img{
+    width: 25rem;
+}
+
+/*-----------error part---------*/
+
+.container .content{
+    color: #5f1042;
+    user-select: none;
+}
+
+/*-----------span element to print oops---------*/
+
+.container .content .oops{
+    color: rgb(253,133,134);
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/*-----------container to show error code---------*/
+
+.container .content .code{
+    color: red;
+}
+
+/*-----------to show right links of the page---------*/
+.container .content ul{
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.container .content ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.container .content ul li a{
+    color: rgb(255, 101, 101);
+    text-transform: capitalize;
+    text-decoration: none;
+}

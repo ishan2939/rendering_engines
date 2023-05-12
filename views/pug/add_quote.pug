@@ -1,0 +1,22 @@
+extends main_layout.pug
+
+block style
+    style 
+        include ./../public/add_quote.css
+
+block content
+    .formContainer 
+        .title Add Quote 
+
+        form(action="/addquote" ,method="POST")
+            label(for="quote") Quote:
+            br
+            textarea(name="quote", cols="15", rows="3", placeholder="Add your quote here...", id="quote", required, autocomplete="off")
+            br
+
+            label(for="quotee") Quotee:
+            br
+            input(type="text", name="quotee" placeholder="Add the quotee here...", id="quotee", required, autocomplete="off")
+            br
+
+            input(type="submit" value="Submit")

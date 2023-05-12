@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link href="./main_layout.css" rel="stylesheet" type="text/css">
+    <link href="./add_quote.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins&family=Roboto&family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Monoton&family=Poppins&family=Roboto&family=Sacramento&family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div>Quotes<span style="color: #b34e8e">4</span>life</div>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/getallquotes" >Quotes</a></li>
+            <li><a href="/addquote" class="active">Add quotes</a></li>
+        </ul>
+    </nav>
+    
+    <div class="formContainer">
+        <div class="title">Add Quote</div>
+        <form action="/addquote" method="POST">
+            <label for="quote">Quote:</label><br />
+            <textarea rows="3" cols="15" placeholder="Add your quote here..." id="quote" name="quote" autocomplete="off" required></textarea><br/>
+
+            <label for="quotee">Quotee:</label><br/>
+            <input type="text" placeholder="Add the quotee here..." id="quote" name="quotee" autocomplete="off" required><br/>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

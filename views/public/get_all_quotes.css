@@ -1,0 +1,87 @@
+/*-----------container to show all the quote---------*/
+
+.quotecontainer{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 50px 30px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+
+/*-----------to show all quotes list---------*/
+
+.quotecontainer ul{
+    list-style-type: none;
+    height: 600px;
+    overflow-y: auto;
+    user-select: none;
+}
+
+.quotecontainer ul li{
+    margin: 20px 0px;
+    padding: 25px 40px;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    font-size: 18px;
+    outline: 3px solid #fff;
+    outline-offset: -10px;
+    border-radius: 7px;
+}
+
+.quotecontainer ul li svg{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/*-----------hide the scrollbar---------*/
+
+.quotecontainer ul::-webkit-scrollbar{
+    display: none;
+}
+
+/*-----------Select every 1, 4, 7 ... children---------*/
+
+.quotecontainer ul li:nth-child(3n-2){
+    background-image: radial-gradient(rgb(159,165,254), rgb(123,176,254));
+}
+
+/*-----------Select every 2, 5, 8 ... children---------*/
+
+.quotecontainer ul li:nth-child(3n-1){
+    background-image: radial-gradient(rgb(59, 173, 160), rgb(117, 211, 178));
+}
+
+/*-----------Select every 3, 5, 9 ... children---------*/
+
+.quotecontainer ul li:nth-child(3n){
+    background-image: radial-gradient(rgb(41, 161, 216), rgb(32,226,246));
+}
+
+/*-----------to show quote---------*/
+
+.quotecontainer ul li .quote{
+    text-transform: capitalize;
+}
+
+/*-----------to show quotee---------*/
+
+.quotecontainer ul li .person{
+    text-align: end;
+    text-transform: capitalize;
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+
+/*-----------show warning if there are no quotes---------*/
+
+.quotecontainer .warning{
+    color: #fff;
+    font-size: 20px;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "templating_engines",
+  "version": "1.0.0",
+  "description": "Templating engines practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon index.js"
+  },
+  "author": "Ishan Harkhani",
+  "license": "ISC",
+  "nodemonConfig": {
+    "ignore": [
+      "./data/quotes.json"
+    ]
+  },
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "path": "^0.12.7",
+    "pug": "^3.0.2"
+  }
+}

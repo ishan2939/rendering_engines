@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 80%;
+    background-attachment: fixed;
+}
+
+/*-----------navbar---------*/
+
+nav {
+    padding: 50px 20px;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*-----------navbar quotes logo container---------*/
+
+nav div{
+    font-family: 'Sacramento', cursive;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 0.05rem;
+    color: #fff;
+}
+
+nav ul{
+    list-style-type: none;
+    padding-right: 20px;
+    column-gap: 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    cursor: pointer;
+}
+
+nav ul li a{
+    padding: 8px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*-----------To show which menu you are on---------*/
+
+.active{
+    background-color: #fff;
+    color: #b34e8e;
+    border-radius: 35px;
+}

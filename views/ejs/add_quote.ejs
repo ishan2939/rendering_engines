@@ -1,0 +1,21 @@
+<%- include('./includes/head.ejs') %>
+
+    <link href="/add_quote.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <%- include('./includes/navbar.ejs') %>
+
+        <div class="formContainer">
+            <div class="title">Add Quote</div>
+            <form action="/addquote" method="POST">
+                <label for="quote">Quote:</label><br />
+                <textarea rows="3" cols="15" placeholder="Add your quote here..." id="quote" name="quote" required autocomplete="off"></textarea><br />
+
+                <label for="quotee">Quotee:</label><br />
+                <input type="text" placeholder="Add the quotee here..." id="quotee" name="quotee" required autocomplete="off"><br />
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+<%- include('./includes/end.ejs') %>
